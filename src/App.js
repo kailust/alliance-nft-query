@@ -33,7 +33,6 @@ function App() {
       .then(data => {
         console.log(data); // Log the response
         setJsonData(data); // Set the entire JSON response
-        const rewardsAttribute = data?.info?.attributes.find(attr => attr.trait_type === 'rewards');
       })
       .catch(error => console.error('Error fetching NFT reward data:', error));
   }, []);
