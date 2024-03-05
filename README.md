@@ -1,7 +1,11 @@
-# Getting Started with Create React App
+#The Alliance NFT Query System 
+This is React application designed to provide users with a convenient interface to query and view data related to Alliance NFTs (Non-Fungible Tokens). These NFTs represent unique digital assets within the Alliance ecosystem, each with its own set of attributes and rewards.
 
+Project Overview
+This project aims to offer users a seamless experience for querying and viewing information about Alliance NFTs. It fetches data from the terra blockchain to display the alliance collect balances of different assets, including Luna and various stable coins. Additionally, users can access the claimable rewards if they break their nft.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Getting Started with Create React App
 ## Available Scripts
 
 In the project directory, you can run:
