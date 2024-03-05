@@ -3,7 +3,6 @@ import { Container, Header, List, ListItem } from './StyledComponents'; // Assum
 
 function App() {
   const [balances, setBalances] = useState([]);
-  const [nftReward, setNftReward] = useState(null);
   const [jsonData, setJsonData] = useState(null);
 
   useEffect(() => {
@@ -35,10 +34,6 @@ function App() {
         console.log(data); // Log the response
         setJsonData(data); // Set the entire JSON response
         const rewardsAttribute = data?.info?.attributes.find(attr => attr.trait_type === 'rewards');
-        if (rewardsAttribute) {
-          const reward = parseInt(rewardsAttribute.value);
-          setNftReward(reward);
-        }
       })
       .catch(error => console.error('Error fetching NFT reward data:', error));
   }, []);
