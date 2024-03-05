@@ -1,4 +1,4 @@
-#The Alliance NFT Query System 
+# The Alliance NFT Query System 
 This is React application designed to provide users with a convenient interface to query and view data related to Alliance NFTs (Non-Fungible Tokens). These NFTs represent unique digital assets within the Alliance ecosystem, each with its own set of attributes and rewards.
 
 Project Overview
