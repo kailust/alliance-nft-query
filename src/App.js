@@ -17,7 +17,7 @@ function App() {
           } else if (balance.denom === 'ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4') {
             return { ...balance, denom: 'axlUSDC' };
           } else if (balance.denom === 'uluna') {
-            return { ...balance, denom: 'luna', amount: parseInt(balance.amount) / 1000000 };
+            return { ...balance, denom: 'Luna', amount: parseInt(balance.amount) / 1000000 };
           } else if (balance.denom.includes('AllianceNFT')) {
             return { ...balance, denom: 'Alliance NFT Collection', amount: parseInt(balance.amount) / 1000000 };
           } else {
@@ -57,8 +57,6 @@ function App() {
         ))}
       </List>
       <Header>NFT Claimable Balance</Header>
-      <p>Rewards: {nftReward !== null ? nftReward : 'N/A'}</p>
-      <Header>Extracted Reward Value</Header>
       <p>Reward Value: {rewardInLuna ? `${rewardInLuna} luna` : 'N/A'}</p>
     </Container>
   );
